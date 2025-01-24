@@ -1,11 +1,15 @@
+import Image from "next/image";
+
 function Family() {
   return (
     <div className="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-lg">
       <div className="relative">
         <div className="absolute top-4 left-4 w-48 h-64 bg-gray-200 rounded-lg"></div>
-        <img
+        <Image
           src="https://placehold.co/200x300"
           alt="A happy family posing in front of the Eiffel Tower"
+          width={200}
+          height={300}
           className="relative w-48 h-64 rounded-lg object-cover"
         />
       </div>

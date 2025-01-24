@@ -37,7 +37,7 @@ function Hero() {
       <div className="md:w-1/2 flex justify-center">
         <div className="relative">
           <Image
-            src="https://placehold.co/400x300"
+            src="/hero.png"
             alt="A modern house with a blue sky background"
             width={400}
             height={300}

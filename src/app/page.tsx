@@ -2,6 +2,8 @@ import Hero from "./components/Hero";
 import MostPick from "./components/MostPick";
 import Backyard from "./components/Backyard";
 import Kitchen from "./components/Kitchen";
+import LargeRooms from "./components/LargeRooms";
+import Family from "./components/Family";
 
 export default function Home() {
   return (
@@ -9,9 +11,21 @@ export default function Home() {
       <div className="mt-24">
         <Hero />
       </div>
-      <MostPick />
-      <Backyard />
-      <Kitchen />
+      <div className="mt-24">
+        <MostPick />
+      </div>
+      <div className="mt-24">
+        <Backyard />
+      </div>
+      <div className="mt-24">
+        <LargeRooms />
+      </div>
+      <div className="mt-24">
+        <Kitchen />
+      </div>
+      <div className="mt-24">
+        <Family />
+      </div>
     </div>
   );
 }
