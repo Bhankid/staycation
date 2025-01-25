@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function HouseDetails() {
   return (
-    <div className="min-h-screen bg-white p-8">
+    <div className="container mx-auto p-8 mt-16">
       {/* Navigation */}
       <nav className="flex items-center space-x-4 text-gray-500">
         <a href="#" className="hover:text-gray-700">
@@ -25,7 +25,7 @@ function HouseDetails() {
         {/* Large Image */}
         <div className="col-span-1 md:col-span-2">
           <Image
-            src="/v1.png" 
+            src="/v1.png"
             alt="Modern white house with geometric shapes and a small garden"
             width={600}
             height={400}
@@ -36,18 +36,18 @@ function HouseDetails() {
         {/* Small Images */}
         <div className="col-span-1 grid grid-rows-2 gap-4">
           <Image
-            src="/v2.png" 
+            src="/v2.png"
             alt="Cozy living room with a gray sofa and colorful pillows"
             width={300}
-            height={200}
-            className="w-full h-auto rounded-lg"
+            height={400}
+            className="w-full h-full rounded-lg object-cover"
           />
           <Image
-            src="/v3.png" 
+            src="/v3.png"
             alt="Bedroom with a large bed and wooden accents"
             width={300}
-            height={200}
-            className="w-full h-auto rounded-lg"
+            height={400}
+            className="w-full h-full rounded-lg object-cover"
           />
         </div>
       </main>

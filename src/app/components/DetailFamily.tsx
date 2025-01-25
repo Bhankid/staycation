@@ -2,21 +2,21 @@ import Image from "next/image";
 
 function DetailFamily() {
   return (
-    <div className="container mx-auto mt-16 bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
+    <div className="container mx-auto mt-16 bg-white p-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
       <div className="relative">
         <Image
           src="/f1.png" 
           alt="A family standing together on the beach, facing the ocean"
           width={300}
           height={400}
-          className="rounded-lg shadow-lg"
+          className="rounded-lg"
         />
         <Image
           src="/family-image-overlay.png" 
           alt="A family standing together on the beach, facing the ocean"
           width={300}
           height={400}
-          className="absolute top-4 left-4 w-full h-full rounded-lg shadow-lg opacity-50"
+          className="absolute top-4 left-4 w-full h-full opacity-50"
         />
       </div>
       <div className="text-center md:text-left">
