@@ -42,18 +42,18 @@ const LargeRooms = () => {
       <h1 className="text-2xl font-bold text-blue-900 mb-6">
         Hotels with large living room
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {hotels.map((hotel, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-lg shadow-md overflow-hidden"
+            className="relative bg-white rounded-lg shadow-md overflow-hidden group"
           >
             <Image
               src={hotel.image}
               alt={hotel.alt}
               width={300}
               height={200}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover transition duration-300 group-hover:scale-105"
             />
             {hotel.popular && (
               <div className="absolute top-0 right-0 bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">

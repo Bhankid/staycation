@@ -42,18 +42,18 @@ const Kitchen = () => {
       <h1 className="text-2xl font-bold text-blue-900 mb-6">
         Apartments with kitchen set
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {kitchenItems.map((item, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md overflow-hidden"
+            className="bg-white rounded-lg shadow-md overflow-hidden group"
           >
             <Image
               src={item.src}
               alt={item.alt}
               width={600}
               height={400}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover transition duration-300 group-hover:scale-105"
             />
             <div className="p-4">
               <h2 className="text-lg font-semibold text-blue-900">

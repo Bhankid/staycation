@@ -42,15 +42,15 @@ const Backyard = () => {
       <h1 className="text-2xl font-bold text-gray-800 mb-6">
         Houses with beauty backyard
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {backyardItems.map((item, index) => (
-          <div key={index} className="relative">
+          <div key={index} className="relative group">
             <Image
               src={item.src}
               alt={item.alt}
               width={300}
               height={200}
-              className="w-full h-[200px] object-cover rounded-lg"
+              className="w-full h-[200px] object-cover rounded-lg transition duration-300 group-hover:scale-105"
             />
             {item.popular && (
               <div className="absolute top-2 left-2 bg-pink-500 text-white text-xs font-semibold px-2 py-1 rounded">
