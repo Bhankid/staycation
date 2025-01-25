@@ -46,7 +46,7 @@ const LargeRooms = () => {
         {hotels.map((hotel, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-lg shadow-md overflow-hidden group"
+            className="relative bg-white rounded-lg overflow-hidden group"
           >
             <Image
               src={hotel.image}
