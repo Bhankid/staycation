@@ -3,7 +3,7 @@ import Image from "next/image";
 function Hero() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-6 mt-16">
-      <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+      <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-8">
         <h1 className="text-5xl font-bold text-gray-900 mb-4">
           Forget Busy Work,
           <br />
@@ -41,7 +41,7 @@ function Hero() {
             alt="A modern house with a blue sky background"
             width={500}
             height={400}
-            className="rounded-lg shadow-lg"
+            className="rounded-lg"
           />
           <div className="absolute top-4 left-4 w-full h-full border-4 border-white rounded-lg"></div>
         </div>

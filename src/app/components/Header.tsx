@@ -51,7 +51,7 @@ function Header() {
             Agents
           </Link>
         </div>
-        <div className="md:hidden flex justify-end">
+        <div className="md:hidden flex justify-end pb-20">
           <button
             className="text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

@@ -4,19 +4,19 @@ function Family() {
   return (
     <div className="container mx-auto p-4 mt-8">
       <div className="flex flex-col md:flex-row items-center bg-white p-6">
-        <div className="relative w-full md:w-1/2">
-          <div className="absolute top-4 left-4 w-64 h-80 bg-gray-200 rounded-lg md:w-1/2 md:h-1/2"></div>
+        <div className="relative">
+          <div className="absolute top-4 left-4 w-64 h-80 bg-gray-200 rounded-lg"></div>
           <Image
             src="/fam.png"
             alt="A happy family posing in front of the Eiffel Tower"
-            width={300}
-            height={400}
-            className="relative w-full h-full rounded-lg object-cover"
+            width={300} 
+            height={400} 
+            className="relative w-64 h-80 rounded-lg object-cover"
           />
         </div>
 
         {/* Content Section - Placed to the Right */}
-        <div className="mt-6 md:mt-0 md:ml-8 text-center md:text-left w-full md:w-1/2">
+        <div className="mt-6 md:mt-0 md:ml-8 text-center md:text-left">
           <h2 className="text-xl font-semibold text-gray-800">Happy Family</h2>
           <div className="flex justify-center md:justify-start mt-2">
             <i className="fas fa-star text-yellow-500"></i>
