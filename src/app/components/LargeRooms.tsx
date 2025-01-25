@@ -1,4 +1,14 @@
-const hotels = [
+import Image from "next/image";
+
+interface Hotel {
+  name: string;
+  location: string;
+  image: string;
+  alt: string;
+  popular?: boolean;
+}
+
+const hotels: Hotel[] = [
   {
     name: "Green Park",
     location: "Tangerang, Indonesia",
@@ -26,9 +36,9 @@ const hotels = [
   },
 ];
 
-function LargeRooms() {
+const LargeRooms = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-8 mt-16">
       <h1 className="text-2xl font-bold text-blue-900 mb-6">
         Hotels with large living room
       </h1>
@@ -38,9 +48,11 @@ function LargeRooms() {
             key={index}
             className="relative bg-white rounded-lg shadow-md overflow-hidden"
           >
-            <img
+            <Image
               src={hotel.image}
               alt={hotel.alt}
+              width={300}
+              height={200}
               className="w-full h-48 object-cover"
             />
             {hotel.popular && (
@@ -57,6 +69,6 @@ function LargeRooms() {
       </div>
     </div>
   );
-}
+};
 
 export default LargeRooms;
