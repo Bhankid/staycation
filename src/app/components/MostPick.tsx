@@ -50,25 +50,46 @@ const MostPick = () => {
   return (
     <div className="p-8 mt-16">
       <h1 className="text-2xl font-bold text-blue-900 mb-6">Most Picked</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {mostPickItems.map((item, index) => (
-          <div key={index} className="relative">
-            <Image
-              src={item.src}
-              alt={item.alt}
-              width={600}
-              height={600}
-              className="w-full h-full object-cover rounded-lg"
-            />
-            <div className="absolute top-0 left-0 bg-pink-500 text-white px-3 py-1 rounded-br-lg">
-              {item.price}
-            </div>
-            <div className="absolute bottom-0 left-0 p-4 text-white">
-              <h2 className="text-lg font-semibold">{item.title}</h2>
-              <p>{item.location}</p>
-            </div>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {/* First Image - Takes 1 column on desktop, full width on mobile */}
+        <div className="lg:col-span-1 relative">
+          <Image
+            src={mostPickItems[0].src}
+            alt={mostPickItems[0].alt}
+            width={350} 
+            height={400} 
+            className="w-full h-[300px] lg:h-[460px] object-cover rounded-lg"
+          />
+          <div className="absolute top-0 left-0 bg-pink-500 text-white px-3 py-1 rounded-br-lg">
+            {mostPickItems[0].price}
           </div>
-        ))}
+          <div className="absolute bottom-0 left-0 p-4 text-white">
+            <h2 className="text-lg font-semibold">{mostPickItems[0].title}</h2>
+            <p>{mostPickItems[0].location}</p>
+          </div>
+        </div>
+
+        {/* Remaining 4 Images - Grid of 2x2 */}
+        <div className="lg:col-span-3 grid grid-cols-2 gap-6">
+          {mostPickItems.slice(1).map((item, index) => (
+            <div key={index} className="relative">
+              <Image
+                src={item.src}
+                alt={item.alt}
+                width={500} 
+                height={200} 
+                className="w-full h-[150px] lg:h-[215px] object-cover rounded-lg"
+              />
+              <div className="absolute top-0 left-0 bg-pink-500 text-white px-3 py-1 rounded-br-lg">
+                {item.price}
+              </div>
+              <div className="absolute bottom-0 left-0 p-4 text-white">
+                <h2 className="text-lg font-semibold">{item.title}</h2>
+                <p>{item.location}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
