@@ -38,7 +38,7 @@ const backyardItems: BackyardItem[] = [
 
 const Backyard = () => {
   return (
-    <div className="p-8">
+    <div className="p-8 mt-16">
       <h1 className="text-2xl font-bold text-gray-800 mb-6">
         Houses with beauty backyard
       </h1>
@@ -50,7 +50,7 @@ const Backyard = () => {
               alt={item.alt}
               width={300}
               height={200}
-              className="w-full h-auto rounded-lg"
+              className="w-full h-[200px] object-cover rounded-lg"
             />
             {item.popular && (
               <div className="absolute top-2 left-2 bg-pink-500 text-white text-xs font-semibold px-2 py-1 rounded">
