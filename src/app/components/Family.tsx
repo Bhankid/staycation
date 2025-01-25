@@ -6,7 +6,7 @@ function Family() {
       <div className="relative">
         <div className="absolute top-4 left-4 w-48 h-64 bg-gray-200 rounded-lg"></div>
         <Image
-          src="https://placehold.co/200x300"
+          src="/fam.png"
           alt="A happy family posing in front of the Eiffel Tower"
           width={200}
           height={300}

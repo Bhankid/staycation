@@ -10,26 +10,26 @@ interface KitchenItem {
 
 const kitchenItems: KitchenItem[] = [
   {
-    src: "https://placehold.co/600x400",
+    src: "/k1.png",
     alt: "Modern kitchen with white cabinets and wooden accents",
     title: "PS Wood",
     location: "Depok, Indonesia",
   },
   {
-    src: "https://placehold.co/600x400",
+    src: "/k2.png",
     alt: "Spacious kitchen with wooden flooring and island",
     title: "One Five",
     location: "Jakarta, Indonesia",
   },
   {
-    src: "https://placehold.co/600x400",
+    src: "/k3.png",
     alt: "Minimalist kitchen with white cabinets and black countertops",
     title: "Minimal",
     location: "Bogor, Indonesia",
     popular: true,
   },
   {
-    src: "https://placehold.co/600x400",
+    src: "/k4.png",
     alt: "Cozy kitchen with red accents and wooden cabinets",
     title: "Stays Home",
     location: "Wonosobo, Indonesia",
