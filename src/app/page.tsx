@@ -11,13 +11,13 @@ export default function Home() {
       <div className="mt-24">
         <Hero />
       </div>
-      <div className="mt-24">
+      <div className="mt-24 pt-20">
         <MostPick />
       </div>
-      <div className="mt-24">
+      <div className="mt-24 pt-20">
         <Backyard />
       </div>
-      <div className="mt-24">
+      <div className="mt-24 pt-20">
         <LargeRooms />
       </div>
       <div className="mt-8">

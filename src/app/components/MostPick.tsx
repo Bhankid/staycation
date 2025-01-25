@@ -48,7 +48,7 @@ const mostPickItems: MostPickItem[] = [
 
 const MostPick = () => {
   return (
-    <div className="p-8 mt-16">
+    <div className="p-8 mt-24 md:mt-16">
       <h1 className="text-2xl font-bold text-blue-900 mb-6">Most Picked</h1>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* First Image - Takes 1 column on desktop, full width on mobile */}
