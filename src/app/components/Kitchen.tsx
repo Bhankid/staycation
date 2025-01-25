@@ -38,7 +38,7 @@ const kitchenItems: KitchenItem[] = [
 
 const Kitchen = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-2 mt-4">
       <h1 className="text-2xl font-bold text-blue-900 mb-6">
         Apartments with kitchen set
       </h1>
