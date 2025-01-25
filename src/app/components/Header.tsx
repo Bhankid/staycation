@@ -6,6 +6,14 @@ function Header() {
   const [activeTab, setActiveTab] = useState("Home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleTabClick = (tabName: string) => {
+    setActiveTab(tabName);
+  };
+
+  const handleMobileMenuToggle = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center p-4 border-b">
@@ -19,7 +27,7 @@ function Header() {
             className={`text-blue-600 hover:text-blue-700 transition duration-300 cursor-pointer ${
               activeTab === "Home" ? "font-bold" : "font-normal"
             }`}
-            onClick={() => setActiveTab("Home")}
+            onClick={() => handleTabClick("Home")}
           >
             Home
           </Link>
@@ -28,7 +36,7 @@ function Header() {
             className={`text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer ${
               activeTab === "Browse by" ? "font-bold" : "font-normal"
             }`}
-            onClick={() => setActiveTab("Browse by")}
+            onClick={() => handleTabClick("Browse by")}
           >
             Browse by
           </Link>
@@ -37,7 +45,7 @@ function Header() {
             className={`text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer ${
               activeTab === "Stories" ? "font-bold" : "font-normal"
             }`}
-            onClick={() => setActiveTab("Stories")}
+            onClick={() => handleTabClick("Stories")}
           >
             Stories
           </Link>
@@ -46,7 +54,7 @@ function Header() {
             className={`text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer ${
               activeTab === "Agents" ? "font-bold" : "font-normal"
             }`}
-            onClick={() => setActiveTab("Agents")}
+            onClick={() => handleTabClick("Agents")}
           >
             Agents
           </Link>
@@ -54,7 +62,7 @@ function Header() {
         <div className="md:hidden flex justify-end pb-20">
           <button
             className="text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={handleMobileMenuToggle}
           >
             <i className="fas fa-bars text-2xl"></i>
           </button>
@@ -65,7 +73,7 @@ function Header() {
                 className={`text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer ${
                   activeTab === "Home" ? "font-bold" : "font-normal"
                 }`}
-                onClick={() => setActiveTab("Home")}
+                onClick={() => handleTabClick("Home")}
               >
                 Home
               </Link>
@@ -74,7 +82,7 @@ function Header() {
                 className={`text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer ${
                   activeTab === "Browse by" ? "font-bold" : "font-normal"
                 }`}
-                onClick={() => setActiveTab("Browse by")}
+                onClick={() => handleTabClick("Browse by")}
               >
                 Browse by
               </Link>
@@ -83,7 +91,7 @@ function Header() {
                 className={`text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer ${
                   activeTab === "Stories" ? "font-bold" : "font-normal"
                 }`}
-                onClick={() => setActiveTab("Stories")}
+                onClick={() => handleTabClick("Stories")}
               >
                 Stories
               </Link>
@@ -92,7 +100,7 @@ function Header() {
                 className={`text-gray-900 hover:text-blue-600 transition duration-300 cursor-pointer ${
                   activeTab === "Agents" ? "font-bold" : "font-normal"
                 }`}
-                onClick={() => setActiveTab("Agents")}
+                onClick={() => handleTabClick("Agents")}
               >
                 Agents
               </Link>
