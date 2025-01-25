@@ -23,7 +23,7 @@ export default function Home() {
       <div className="mt-8">
         <Kitchen />
       </div>
-      <div className="mt-24">
+      <div className="mt-16">
         <Family />
       </div>
     </div>
